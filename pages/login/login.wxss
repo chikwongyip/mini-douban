@@ -3,12 +3,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0, 80rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
 }
 .logo {
   width: 144rpx;
   height: 144rpx;
-  margin: 40rpx;
+  margin: 80rpx;
 }
 .btn-login {
   height: 80rpx;
@@ -21,10 +22,21 @@
   background-color: #42bd55;
   color: #fff;
   height: 80rpx;
-  margin-bottom: 20rpx;
+  margin-bottom: 40rpx;
 }
 .douban {
   background-color: #fff;
   color: #42bd55;
   border: #42bd55 1rpx solid;
+}
+.agreement {
+  color: gray;
+  font-size: 25rpx;
+  display: flex;
+  position: absolute;
+  bottom: 40rpx;
+}
+.agreement .open {
+  color: #42bd55;
+  margin-left: 12rpx;
 }
