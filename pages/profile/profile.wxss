@@ -1,0 +1,9 @@
+/* pages/profile/profile.wxss */
+.verison {
+  position: absolute;
+  bottom: 30rpx;
+  color: gray;
+  font-size: 24rpx;
+  width: 100%;
+  text-align: center;
+}
