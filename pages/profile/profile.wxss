@@ -1,8 +1,8 @@
 /* pages/profile/profile.wxss */
 .login-wrapper {
-  position: relative;
   height: 400rpx;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }
@@ -24,11 +24,39 @@
   width: 350rpx;
   text-align: center;
 }
-.verison {
+.version {
   position: absolute;
   bottom: 30rpx;
-  color: gray;
+  color: #c9c9c9;
   font-size: 24rpx;
   width: 100%;
   text-align: center;
+}
+.items-wrapper {
+  margin-top: 30rpx;
+}
+.title-wrapper {
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.title-wrapper .title {
+  font-weight: bold;
+  font-size: 60rpx;
+}
+.title-wrapper .view {
+  color: gray;
+  display: flex;
+  align-items: center;
+  font-size: 30rpx;
+}
+.items-wrapper .arrow {
+  width: 20rpx;
+  height: 20rpx;
+  border-right: 4rpx solid #c9c9c9;
+  border-bottom: 4rpx solid #c9c9c9;
+  transform: rotate(-45deg);
+  margin-left: 15rpx;
 }
