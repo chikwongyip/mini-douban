@@ -60,3 +60,52 @@
   transform: rotate(-45deg);
   margin-left: 15rpx;
 }
+.info-wrapper {
+  width: 100%;
+}
+.item {
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+.item .icon {
+  width: 108rpx;
+  height: 108rpx;
+  padding-right: 30rpx;
+}
+.info-wrapper .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.info .left .top {
+  margin-top: 15rpx;
+  font-size: 32rpx;
+}
+.info .left .bottom {
+  display: flex;
+  color: gray;
+  align-items: flex-end;
+}
+.info .count {
+  font-size: 60rpx;
+  font-weight: bold;
+}
+.info .bottom .text {
+  margin-bottom: 15rpx;
+  margin-left: 10rpx;
+}
+.info .right {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.info .right .text {
+  color: grey;
+}
+.info .right .begin {
+  color: black;
+  background-color: #f4f4f4;
+  border-radius: 10rpx;
+}

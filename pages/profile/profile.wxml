@@ -14,18 +14,22 @@
     </view>
     <view class="items">
       <view class="item">
-        <image src="/assets/imgs//ic_cat_book.png" mode="aspectFit" />
+        <image
+          class="icon"
+          src="/assets/imgs//ic_cat_book.png"
+          mode="aspectFit"
+        />
         <view class="info-wrapper">
           <view class="info">
             <view class="left">
               <view class="top">观影分析</view>
               <view class="bottom">
                 <view class="count">0</view>
-                看过
+                <view class="text">看过</view>
               </view>
             </view>
             <view class="right">
-              <view class="text">标记10部影片.开启观影分析</view>
+              <text class="text">标记10部影片\n开启观影分析</text>
               <view class="begin">立即开启</view>
               <view class="arrow"></view>
             </view>
