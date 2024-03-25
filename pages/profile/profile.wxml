@@ -13,23 +13,23 @@
       </view>
     </view>
     <view class="items">
-      <view class="item">
+      <view wx:for="{{ items }}" wx:key="unique" class="item">
         <image
           class="icon"
-          src="/assets/imgs//ic_cat_book.png"
+          src="/assets/imgs//{{ item.icon }}"
           mode="aspectFit"
         />
         <view class="info-wrapper">
           <view class="info">
             <view class="left">
-              <view class="top">观影分析</view>
+              <view class="top">{{ item.title }}</view>
               <view class="bottom">
-                <view class="count">0</view>
-                <view class="text">看过</view>
+                <view class="count">{{ item.count }}</view>
+                <view class="text">{{ item.has }}</view>
               </view>
             </view>
-            <view class="right">
-              <text class="text">标记10部影片\n开启观影分析</text>
+            <view data-index="{{ index }}" , class="right" bindtap="begin">
+              <text class="text">{{ item.mark }}</text>
               <view class="begin">立即开启</view>
               <view class="arrow"></view>
             </view>
