@@ -124,3 +124,7 @@
   background-color: #f4f4f4;
   margin-top: 15rpx;
 }
+/* item 最后一个隐藏分割线 */
+/* .item:last-of-type .divider {
+  display: none;
+} */

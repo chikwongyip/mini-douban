@@ -28,13 +28,13 @@
                 <view class="text">{{ item.has }}</view>
               </view>
             </view>
-            <view data-index="{{ index }}" , class="right" bindtap="begin">
+            <view data-index="{{ index }}" class="right" bindtap="begin">
               <text class="text">{{ item.mark }}</text>
               <view class="begin">立即开启</view>
               <view class="arrow"></view>
             </view>
           </view>
-          <view class="divider"></view>
+          <view wx:if="{{ index < items.length - 1 }}" class="divider"></view>
         </view>
       </view>
       <view class="item"></view>
