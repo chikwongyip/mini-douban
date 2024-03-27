@@ -1,4 +1,9 @@
 /* pages/profile/profile.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 .login-wrapper {
   height: 400rpx;
   display: flex;

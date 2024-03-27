@@ -1,44 +1,46 @@
 <!--pages/profile/profile.wxml-->
-<view>
-  <view class="login-wrapper">
-    <view class="login">登录</view>
-    <image src="/assets//imgs/bg_mine_login.png" mode="aspectFill" />
-  </view>
-  <view class="items-wrapper">
-    <view class="title-wrapper">
-      <view class="title">我的书影音</view>
-      <view class="view">
-        登录查看
-        <view class="arrow"></view>
-      </view>
+<view class="container">
+  <view>
+    <view class="login-wrapper">
+      <view class="login">登录</view>
+      <image src="/assets//imgs/bg_mine_login.png" mode="aspectFill" />
     </view>
-    <view class="items">
-      <view wx:for="{{ items }}" wx:key="unique" class="item">
-        <image
-          class="icon"
-          src="/assets/imgs//{{ item.icon }}"
-          mode="aspectFit"
-        />
-        <view class="info-wrapper">
-          <view class="info">
-            <view class="left">
-              <view class="top">{{ item.title }}</view>
-              <view class="bottom">
-                <view class="count">{{ item.count }}</view>
-                <view class="text">{{ item.has }}</view>
-              </view>
-            </view>
-            <view data-index="{{ index }}" class="right" bindtap="begin">
-              <text class="text">{{ item.mark }}</text>
-              <view class="begin">立即开启</view>
-              <view class="arrow"></view>
-            </view>
-          </view>
-          <view wx:if="{{ index < items.length - 1 }}" class="divider"></view>
+    <view class="items-wrapper">
+      <view class="title-wrapper">
+        <view class="title">我的书影音</view>
+        <view class="view">
+          登录查看
+          <view class="arrow"></view>
         </view>
       </view>
-      <view class="item"></view>
-      <view class="item"></view>
+      <view class="items">
+        <view wx:for="{{ items }}" wx:key="unique" class="item">
+          <image
+            class="icon"
+            src="/assets/imgs//{{ item.icon }}"
+            mode="aspectFit"
+          />
+          <view class="info-wrapper">
+            <view class="info">
+              <view class="left">
+                <view class="top">{{ item.title }}</view>
+                <view class="bottom">
+                  <view class="count">{{ item.count }}</view>
+                  <view class="text">{{ item.has }}</view>
+                </view>
+              </view>
+              <view data-index="{{ index }}" class="right" bindtap="begin">
+                <text class="text">{{ item.mark }}</text>
+                <view class="begin">立即开启</view>
+                <view class="arrow"></view>
+              </view>
+            </view>
+            <view wx:if="{{ index < items.length - 1 }}" class="divider"></view>
+          </view>
+        </view>
+        <view class="item"></view>
+        <view class="item"></view>
+      </view>
     </view>
   </view>
   <view class="version">版本1.0.3.9</view>
