@@ -1,0 +1,9 @@
+/* pages/home/home.wxss */
+.search-wrapper {
+  display: flex;
+}
+.search-wrapper .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
