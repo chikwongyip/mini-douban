@@ -3,7 +3,7 @@
   <view class="header">
     <view class="search-wrapper">
       <view class="button">
-        <image src="/assets/imgs/ic_search.png"> </image>
+        <image class="icon" src="/assets/imgs/ic_search.png"> </image>
         <view class="text"> 搜索 </view>
       </view>
     </view>

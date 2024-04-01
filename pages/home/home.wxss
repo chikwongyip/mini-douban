@@ -1,9 +1,21 @@
 /* pages/home/home.wxss */
 .search-wrapper {
   display: flex;
+  background-color: green;
+  padding: 20rpx;
 }
 .search-wrapper .button {
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
+  background-color: white;
+}
+.search-wrapper .button .icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.search-wrapper .button .text {
+  font-size: 40rpx;
 }
