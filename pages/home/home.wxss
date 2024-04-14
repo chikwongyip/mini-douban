@@ -1,21 +1,47 @@
 /* pages/home/home.wxss */
-.search-wrapper {
+.search {
   display: flex;
   background-color: green;
   padding: 20rpx;
 }
-.search-wrapper .button {
+.search .button {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
   background-color: white;
 }
-.search-wrapper .button .icon {
+.search .button .icon {
   width: 40rpx;
   height: 40rpx;
   margin-right: 20rpx;
 }
-.search-wrapper .button .text {
+.search .button .text {
   font-size: 40rpx;
+}
+.title-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20rpx;
+}
+
+.title-wrapper .title {
+  color: gray;
+  font-weight: bold;
+  font-size: 40rpx;
+}
+.title-wrapper .more {
+  color: gray;
+  font-size: 30rpx;
+  display: flex;
+  align-items: center;
+}
+.title-wrapper .arrow {
+  width: 20rpx;
+  height: 20rpx;
+  border-right: 4rpx solid #c9c9c9;
+  border-bottom: 4rpx solid #c9c9c9;
+  transform: rotate(-45deg);
+  margin-left: 5rpx;
 }
