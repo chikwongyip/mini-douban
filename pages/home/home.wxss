@@ -45,3 +45,36 @@
   transform: rotate(-45deg);
   margin-left: 5rpx;
 }
+.items {
+  white-space: nowrap;
+}
+.items .item {
+  display: inline-flex;
+  flex-direction: column;
+  margin: left 30rpx;
+}
+.items .item:last-of-type {
+  margin-right: 30rpx;
+}
+.item .photo {
+  width: 210rpx;
+  height: 301rpx;
+  margin-bottom: 15rpx;
+}
+.item .name {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+}
+.rate-wrapper {
+  display: flex;
+  align-items: center;
+}
+.rate-wrapper .stars {
+  display: flex;
+  align-items: center;
+}
+.stars .star {
+  width: 32rpx;
+  height: 32rpx;
+}

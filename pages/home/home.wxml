@@ -14,7 +14,24 @@
         <view class="title">影院热映</view>
         <view class="more">查看更多<view class="arrow"></view></view>
       </view>
-      <view class="item-wrapper"></view>
+      <view class="item-wrapper">
+        <scroll-view class="items" scroll-x="true">
+          <view class="item" wx:for="{{ 20 }}">
+            <image class="photo"></image>
+            <view class="name">我和我的祖国</view>
+
+            <view class="rate-wrapper">
+              <view class="stars">
+                <image
+                  class="star"
+                  src="/assets/imgs/rating_star_small_on.png"
+                ></image>
+              </view>
+              <view class="rate">8.9</view>
+            </view>
+          </view>
+        </scroll-view>
+      </view>
     </view>
   </view>
 </view>
