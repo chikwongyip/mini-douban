@@ -3,21 +3,58 @@ Page({
   /**
    * Page initial data
    */
-  data: {},
-
-  /**
-   * Lifecycle function--Called when page load
-   */
-  onLoad(options) {
+  data: {
+    hotMovies: []
+  },
+  loadData(city) {
+    wx.request({
+      url: 'https://douban.uieee.com/v2/movie/in_theaters',
+      data: {
+        city: city
+      },
+      header: {
+        'content-type': 'json'
+      },
+      success: (res) => {
+        // 赋值同时刷新页面
+        this.setData({
+          hotMovies: res.data.subjects
+        });
+      },
+      fail: () => {}
+    });
+  },
+  loadCity(success) {
     wx.getLocation({
       success: (res) => {
-        console.log(res);
+        wx.request({
+          url: 'https://api.map.baidu.com/reverse_geocoding/v3',
+          data: {
+            output: 'json',
+            coordtype: 'wgs84ll',
+            ak: '9zTl9xXSCCA8FTnsqQA9Ro8B1mO85v4W',
+            location: `${res.latitude},${res.longitude}`
+            // location: res.latitude + ',' + res.longitude
+          },
+          success: (res) => {
+            let city = res.data.result.addressComponent.city;
+            city = city.substring(0, city.length - 1);
+            success && success(city);
+          },
+          fail: () => {
+            wx.db.toastError('获取城市失败');
+          }
+        });
       },
-      fail: (err) => {
-        console.log(err);
+      fail: () => {
+        wx.db.toastError('获取定位失败');
       }
     });
   },
+  /**
+   * Lifecycle function--Called when page load
+   */
+  onLoad(options) {},
 
   /**
    * Lifecycle function--Called when page is initially rendered

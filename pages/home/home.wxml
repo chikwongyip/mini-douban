@@ -16,7 +16,12 @@
       </view>
       <view class="item-wrapper">
         <scroll-view class="items" scroll-x="true">
-          <view class="item" wx:for="{{ 20 }}">
+          <view
+            class="item"
+            wx:for="{{ hotMovies }}"
+            wx:for-item=" movie"
+            wx:key="unique"
+          >
             <image class="photo"></image>
             <view class="name">我和我的祖国</view>
 
