@@ -2,7 +2,6 @@
 App({
   onLaunch() {
     wx.db = {};
-
     const toastTypeNormal = 0;
     const toastTypeSuccess = 1;
     const toastTypeError = 2;
