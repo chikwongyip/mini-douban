@@ -38,8 +38,6 @@
             <view wx:if="{{ index < items.length - 1 }}" class="divider"></view>
           </view>
         </view>
-        <view class="item"></view>
-        <view class="item"></view>
       </view>
     </view>
   </view>

@@ -1,8 +1,12 @@
 /* pages/profile/profile.wxss */
+page {
+  height: 100%;
+}
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  font-size: 25rpx;
 }
 .login-wrapper {
   height: 400rpx;
@@ -30,8 +34,7 @@
   text-align: center;
 }
 .version {
-  position: absolute;
-  bottom: 30rpx;
+  margin-bottom: 20rpx;
   color: #c9c9c9;
   font-size: 24rpx;
   width: 100%;
